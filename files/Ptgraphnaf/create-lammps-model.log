@@ -1,0 +1,15 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+usage: mace_create_lammps_model [-h] [--head [HEAD]] [--dtype [DTYPE]]
+                                [--format FORMAT]
+                                model_path
+
+positional arguments:
+  model_path       Path to the model to be converted to LAMMPS
+
+options:
+  -h, --help       show this help message and exit
+  --head [HEAD]    Head of the model to be converted to LAMMPS (default: None)
+  --dtype [DTYPE]  Data type of the model to be converted to LAMMPS (default:
+                   float64)
+  --format FORMAT  Old libtorch format, or new mliap format (default:
+                   libtorch)

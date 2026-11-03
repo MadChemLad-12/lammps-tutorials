@@ -1,0 +1,10 @@
+units           metal
+atom_style      atomic
+boundary        p p p
+read_data       data.lammps
+
+pair_style      zero 5.0
+pair_coeff      * *
+neighbor        2.0 bin
+thermo_style    custom step atoms pe vol
+minimize        1e-6 1e-6 50 100
